@@ -23,7 +23,6 @@
           uses: actions/deploy-pages@v3
           env:
             name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
           with:
               artifact_name: github-pages
               token: ${{ github.token }}
