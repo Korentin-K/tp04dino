@@ -17,9 +17,6 @@
         - name: checkout code
           uses: actions/checkout@v4
 
-        - name: upload artifact
-          uses: actions/upload-pages-artifact@v3
-
         - name: deploy page
           uses: actions/deploy-pages@v3
 
