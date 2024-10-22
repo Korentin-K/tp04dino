@@ -32,6 +32,3 @@
               artifact_name: github-pages
               token: ${{ github.token }}
               preview: true
-
-        - name: deploy
-          run: gh-pages -d build
