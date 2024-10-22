@@ -20,7 +20,7 @@
 
         - name: deploy page
           id: deployment
-          uses: actions/deploy-pages@v3
+          uses: actions/deploy-pages@v4
           env:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
