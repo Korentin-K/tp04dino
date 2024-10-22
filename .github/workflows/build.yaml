@@ -1,4 +1,4 @@
-name: Deploy workflow
+name: Build
 on:
   push
 
@@ -17,5 +17,5 @@ jobs:
       - name: install npm
         run: npm install
 
-      - name: Build
+      - name: build
         run: npm run build
