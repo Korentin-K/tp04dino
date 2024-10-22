@@ -1,0 +1,19 @@
+  name: Deploy workflow
+  on:
+    push
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v4
+
+        - name: deploy page
+          uses: actions/deploy-pages@v3
+
+        - name: upload artifact
+          uses: actions/upload-pages-artifact@v2
+
+        - name: deploy
+          uses: gh-pages -d build
